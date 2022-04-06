@@ -7,6 +7,29 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_7
 }
 
+
+ext {
+    bintrayRepo = "NK-Annotations"
+    bintrayName = "com.nihalkonda.annotation_compilers"
+
+    publishedGroupId = "$bintrayName"
+    libraryName = "$bintrayRepo"
+    artifact = 'compilers'
+
+    siteUrl = 'https://github.com/nihalkonda5/Android-NkAnnotations'
+    gitUrl = "${siteUrl}.git"
+
+    libraryVersion = '1.0.0'
+
+    developerId = "nihalkonda5"
+    developerName = 'Nihal Konda'
+    developerEmail = 'konda.nihal5@gmail.com'
+
+    licenseName = 'Apache-2.0'
+    licenseUrl = 'https://www.apache.org/licenses/LICENSE-2.0'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
 
     implementation 'com.squareup:javapoet:1.13.0'

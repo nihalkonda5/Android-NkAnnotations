@@ -25,6 +25,29 @@ android {
     }
 }
 
+
+ext {
+    bintrayRepo = "NK-Annotations"
+    bintrayName = "com.nihalkonda.annotation_processors"
+
+    publishedGroupId = "$bintrayName"
+    libraryName = "$bintrayRepo"
+    artifact = 'processors'
+
+    siteUrl = 'https://github.com/nihalkonda5/Android-NkAnnotations'
+    gitUrl = "${siteUrl}.git"
+
+    libraryVersion = '1.0.0'
+
+    developerId = "nihalkonda5"
+    developerName = 'Nihal Konda'
+    developerEmail = 'konda.nihal5@gmail.com'
+
+    licenseName = 'Apache-2.0'
+    licenseUrl = 'https://www.apache.org/licenses/LICENSE-2.0'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
